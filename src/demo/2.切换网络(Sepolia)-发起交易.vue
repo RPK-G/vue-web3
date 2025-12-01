@@ -113,6 +113,8 @@ const sendTransaction = async () => {
   } catch (error) {
     console.error(error)
     txStatus.value = '❌ 交易取消或失败'
+
+
   }
 }
 </script>
