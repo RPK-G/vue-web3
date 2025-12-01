@@ -15,6 +15,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      # 步骤二：安装 pnpm (必须在 setup-node 之前)
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8 # 指定你需要的 pnpm 版本
+
       # 步骤二：安装 Node.js 环境
       - name: Setup Node.js
         uses: actions/setup-node@v3
